@@ -388,7 +388,7 @@ $("body").on("click","#loginbtn", function(){
                                             $("#responsediv").html('<div class="alert alert-success" role="alert"><small><center>Login successful <br><i class="fa fa-spinner fa-spin"></i> Redirecting....</center></small></div>');
                                                 $("html, #responsediv").animate({ scrollTop: 200 }, "slow"); 
                                              setTimeout(() => {
-                                              window.location.href = "dashboard.php";
+                                              window.location.href = "users/dashboard.php";
                                              }, 2000);
                                           } else if(dataresponse == '2')
                                           {
