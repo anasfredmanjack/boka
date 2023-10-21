@@ -60,6 +60,11 @@ window.smartsupp||(function(d) {
                                                                             <div id="registerresponse"></div>
                                                                         </div>
                                                                 </div>    
+                                                                 <div class="row align-items-center">  
+                                                                        <div class="col-md-12">
+                                                                            <div id="prescribeaddresp"></div>
+                                                                        </div>
+                                                                </div>
                                                                 <div class="row align-items-center">  
                                                                     <div class="col-md-12"> 
                                                                             <center><h5  style="color:#3d9970;">Prescription Details</h5>
@@ -274,8 +279,29 @@ window.smartsupp||(function(d) {
       </div>
 </div>
 
-   
+<div class="row">
+    <div class="col-12">
+        <div class="main-card mb-3 card">
+            <div class="card-body">
+                <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
+                <thead>
+                <tr>
+                <th>Prescription Name</th>
+                <th>Date Created</th>
+                <th>Total Number of Drugs</th>
+                <th></th>
+                <th></th>
+                </tr>
+                </thead>
+                <tbody id="fetchtabledata">
 
+                    
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
                   
 
 </div>
@@ -392,12 +418,27 @@ $("body").on("click","#addrgbtn", function(){
                     success: function(data)
                     {
                     
-                        $("#chatcontainer").append(data);
-                        $("#submitbtn").html('Talk to me <i class="pe-7s-paper-plane" style="font-size:100%;"> </i>');
+                        $("#prescribeaddresp").html(data);
+                        $("#submitbtn").html('<i class="fas fa-plus"></i> upload prescription');
                     }
                 });
         
         
+    });
+    
+    $("document").ready(function(){
+         var userrid = "<?php echo $userrid; ?>";
+           $("#fetchtabledata").html('<tr colspan="8"><td><center><i style="color:white;" class="fa fa-spinner fa-spin"></i></center></td></tr>');
+               $.ajax({
+                    url: '../scripts/loadprescriptiontable.php',
+                    method:'POST',
+                    data: 'userrid='+userrid,
+                    success: function(data)
+                    {
+                    
+                        $("#fetchtabledata").html(data);
+                    }
+                });
     });
 </script>
 </body>
