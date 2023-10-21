@@ -173,7 +173,7 @@ include('scripts/config/config.php');
         $("body").on("click","#submitbtn", function(){
             $("#submitbtn").html('<i style="color:white;" class="fa fa-spinner fa-spin"></i>');
             var dateofbirth = $("#dateofbirth").val();
-            var weight = $("#Weight").val();
+            var weight = $("#weight").val();
             var allergies = $("#allergies").val();
             var pastmedicalhistory = $("#pastmedicalhistory").val();
             var familypastmedicalhistory = $("#familypastmedicalhistory").val();
@@ -202,7 +202,7 @@ include('scripts/config/config.php');
 
                                             	$("html, #medprofileresponse").animate({ scrollTop: 0 }, "slow"); 
 										setTimeout(() => {
-											window.location.href = "dashboard.php";
+											window.location.href = "users/dashboard.php";
 										}, 1000);
 									
                                 }
