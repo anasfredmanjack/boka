@@ -5,7 +5,7 @@ if(!isset($_SESSION['meduserid']))
 {
 header("Location: ../login.html");
 }
-include('scripts/config/config.php');
+include('../scripts/config/config.php');
  $userrid = $_SESSION['meduserid'];
 ?>
 
@@ -72,35 +72,6 @@ include('scripts/config/config.php');
 </div>
  <div class="app-header__content">
 <div class="app-header-right">
-<div class="header-dots">
-
-<div class="dropdown">
-<button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
-<span class="icon-wrapper icon-wrapper-alt rounded-circle">
-<span class="icon-wrapper-bg bg-danger"></span>
-<i class="icon text-danger icon-anim-pulse ion-android-notifications"></i>
-<span class="badge badge-dot badge-dot-sm badge-danger">Notifications</span>
-</span>
-</button>
-</div>
-
-
-</div>
-<div class="header-btn-lg pr-0">
-<div class="widget-content p-0">
-<div class="widget-content-wrapper">
-<div class="widget-content-left">
-<div class="btn-group">
-<a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-<img width="42" class="rounded-circle" src="assets/images/unknownuser.png" alt>
-</a>
-
-</div>
-</div>
-
-</div>
-</div>
-</div>
 <div class="header-btn-lg">
 <a href="../logout.php"><button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button></a>
 </div> </div>
@@ -122,8 +93,8 @@ include('scripts/config/config.php');
 <div class="page-title-icon">
 <i class="pe-7s-keypad text-success"></i>
 </div>
-<div>Welcome How can Boka help you !!
-<div class="page-title-subheading">Whatever the symptom is BOKA is here to help</div>
+<div> <span style="color:#3d9970;">Prescription</span>
+<div class="page-title-subheading">Upload your Prescription and receive prescription reminders and customised help tips integrated with <span style="color:#3d9970;">BOKA AI</span></div>
 </div>
 </div>
  </div>
@@ -184,8 +155,7 @@ include('scripts/config/config.php');
 
 <div class="app-footer-right">
 <p class="text-center">&copy;
-                    <a href="index.php" target="_blank" rel="noopener">BOKA - BRIDGING MEDICAL GAPS</a></p>
-
+                    <a href="dashboard.php" target="_blank" rel="noopener">BOKA - BRIDGING MEDICAL GAPS</a></p>
 
 </div>
 

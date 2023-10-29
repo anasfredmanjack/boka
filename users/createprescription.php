@@ -3,7 +3,7 @@
  session_start();
 if(!isset($_SESSION['meduserid']))
 {
-header("Location: login.php");
+header("Location: ../login.html");
 }
 include('scripts/config/config.php');
  $userrid = $_SESSION['meduserid'];
@@ -320,7 +320,7 @@ include('scripts/config/config.php');
              }
         
       
-    handleAuthClick();
+            handleAuthClick();
                             
         
             $.ajax({
@@ -353,8 +353,8 @@ include('scripts/config/config.php');
       /* exported handleSignoutClick */
 
       // TODO(developer): Set to client ID and API key from the Developer Console
-      const CLIENT_ID = '562119';
-      const API_KEY = 'AIz;
+      const CLIENT_ID = '562119791774-ckqmkcfsp5v6olt0rfugds7qm6cf9cfh.apps.googleusercontent.com';
+      const API_KEY = 'AIzaSyAQO2RFn7wepE-syBB0wTfGDRFxA9jUM-A';
 
       // Discovery doc URL for APIs used by the quickstart
       const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';

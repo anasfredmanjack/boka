@@ -5,7 +5,7 @@ if(!isset($_SESSION['meduserid']))
 {
 header("Location: ../login.html");
 }
-include('scripts/config/config.php');
+include('../scripts/config/config.php');
  $userrid = $_SESSION['meduserid'];
 ?>
 
@@ -130,8 +130,8 @@ window.smartsupp||(function(d) {
 <div class="page-title-icon">
 <i class="pe-7s-keypad text-success"></i>
 </div>
-<div>Welcome How can Boka help you !!
-<div class="page-title-subheading">Whatever the symptom is BOKA is here to help</div>
+<div> <span style="color:#3d9970;">Medical Assistant</span>
+<div class="page-title-subheading">Welcome How can Boka help you <br>Whatever the symptom is BOKA is here to help</div>
 </div>
 </div>
  </div>
@@ -215,7 +215,7 @@ window.smartsupp||(function(d) {
 
 <div class="app-footer-right">
 <p class="text-center">&copy;
-                    <a href="index.php" target="_blank" rel="noopener">BOKA - BRIDGING MEDICAL GAPS</a></p>
+                    <a href="dashboard.php" target="_blank" rel="noopener">BOKA - BRIDGING MEDICAL GAPS</a></p>
 
 
 </div>

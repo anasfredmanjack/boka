@@ -78,35 +78,6 @@ window.smartsupp||(function(d) {
 </div>
  <div class="app-header__content">
 <div class="app-header-right">
-<div class="header-dots">
-
-<div class="dropdown">
-<button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
-<span class="icon-wrapper icon-wrapper-alt rounded-circle">
-<span class="icon-wrapper-bg bg-danger"></span>
-<i class="icon text-danger icon-anim-pulse ion-android-notifications"></i>
-<span class="badge badge-dot badge-dot-sm badge-danger">Notifications</span>
-</span>
-</button>
-</div>
-
-
-</div>
-<div class="header-btn-lg pr-0">
-<div class="widget-content p-0">
-<div class="widget-content-wrapper">
-<div class="widget-content-left">
-<div class="btn-group">
-<a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-<img width="42" class="rounded-circle" src="assets/images/unknownuser.png" alt>
-</a>
-
-</div>
-</div>
-
-</div>
-</div>
-</div>
 <div class="header-btn-lg">
 <a href="../logout.php"><button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button></a>
 </div> </div>
@@ -140,17 +111,20 @@ window.smartsupp||(function(d) {
                                     <div class="row">
                                         <div class="col-lg-6 col-xl-4">
                                             <div class="card mb-3 widget-content bg-night-fade">
+                                                <a href="https://ourworldindata.org/grapher/number-of-births-per-year">
                                                 <div class="widget-content-wrapper text-white">
                                                     <div class="widget-content-left">
-                                                        <div class="widget-heading">COVID TRACKER</div>
-                                                        <div class="widget-subheading"><small>Track the outbreak of the pandemic</small></div>
+                                                        <div class="widget-heading">World Birth Rates</div>
+                                                        <div class="widget-subheading"><small>According to UN</small></div>
                                                     </div>
                                                     
                                                 </div>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-xl-4">
                                             <div class="card mb-3 widget-content bg-arielle-smile">
+                                                 <a href="https://www.cdc.gov/outbreaks/index.html">
                                                 <div class="widget-content-wrapper text-white">
                                                     <div class="widget-content-left">
                                                         <div class="widget-heading">OUTBREAK LIST</div>
@@ -158,21 +132,19 @@ window.smartsupp||(function(d) {
                                                     </div>
                                                     
                                                 </div>
+                                                </a>
                                             </div>
                                         </div>
                                                 <div class="col-lg-6 col-xl-4">
                                                     <div class="card mb-3 widget-content bg-premium-dark">
+                                                        <a href="https://ourworldindata.org/grapher/number-of-deaths-per-year">
                                                         <div class="widget-content-wrapper text-white">
                                                             <div class="widget-content-left">
                                                                 <div class="widget-heading">World Death Rates</div>
-                                                                <div class="widget-subheading"><small>According to CDC</small></div>
-                                                            </div>
-                                                                <div class="widget-content-right">
-                                                                    <div class="widget-numbers text-warning">
-                                                                        <span>3,000,000</span>
-                                                                    </div>
+                                                                <div class="widget-subheading"><small>According to UN</small></div>
                                                             </div>
                                                     </div>
+                                                        </a>
                                                 </div>
                                             </div>
                                     </div>
@@ -227,7 +199,7 @@ window.smartsupp||(function(d) {
 
 <div class="app-footer-right">
 <p class="text-center">&copy;
-                    <a href="index.php" target="_blank" rel="noopener">BOKA - BRIDGING MEDICAL GAPS</a></p>
+                    <a href="dashboard.php" target="_blank" rel="noopener">BOKA - BRIDGING MEDICAL GAPS</a></p>
 
 
 </div>

@@ -132,35 +132,6 @@ include('../scripts/config/config.php');
 </div>
  <div class="app-header__content">
 <div class="app-header-right">
-<div class="header-dots">
-
-<div class="dropdown">
-<button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
-<span class="icon-wrapper icon-wrapper-alt rounded-circle">
-<span class="icon-wrapper-bg bg-danger"></span>
-<i class="icon text-danger icon-anim-pulse ion-android-notifications"></i>
-<span class="badge badge-dot badge-dot-sm badge-danger">Notifications</span>
-</span>
-</button>
-</div>
-
-
-</div>
-<div class="header-btn-lg pr-0">
-<div class="widget-content p-0">
-<div class="widget-content-wrapper">
-<div class="widget-content-left">
-<div class="btn-group">
-<a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-<img width="42" class="rounded-circle" src="assets/images/unknownuser.png" alt>
-</a>
-
-</div>
-</div>
-
-</div>
-</div>
-</div>
 <div class="header-btn-lg">
 <a href="../logout.php"><button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button></a>
 </div> </div>
