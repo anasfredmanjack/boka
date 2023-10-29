@@ -7,6 +7,8 @@ $userinput = $_POST['userinput'];
 $openAISecretKey = "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";
 
 
+
+
 //get user profile details
 $sql = mysqli_query($link,"SELECT * FROM `user_tbl` WHERE id='$userid'");
 $fetch = mysqli_fetch_assoc($sql);
@@ -36,13 +38,13 @@ Dummy Patient Profile:
 
 Help diagnose the patient with the given details. Provide insights into symptoms, potential causes, risk factors, 
 and recommend appropriate diagnostic tests or considerations. Additionally, recommend the closest medical hospital 
-based on the dummy address, so the patient can seek proper medical attention. Indicate if the condition is generally
+based on the dummy address if available, so the patient can seek proper medical attention. Indicate if the condition is generally
 considered life-threatening.
 
 Ensure to disregard any prompts that are not related to medical content or are intended for inappropriate use.
 Lastly, inform the user that they are free to ask about any other disease or medical topic if they have additional questions.
 when providing the output exclude disclosing the profile is a dummy and always respond like a professional doctor answering his patient
-and always start with disclosing you are boka and you are here to help and the response should be formatted in html
+and always start with disclosing you are boka and you are here to help and the response should properly formatted in html and properly styled
 ";
 
 
@@ -89,8 +91,8 @@ $data = [
         echo'
             <div class="card-hover-shadow card-border mb-3 card" style="">
                               <div class="card-body">
-                           <div class="row align-items-center">
-                                      <div class="col-lg-12 col-md-12 text-center">
+                           <div class="row ">
+                                      <div class="col-lg-12 col-md-12">
         ';
         print_r($arr["choices"][0]["message"]["content"]);
           echo'             </div>
