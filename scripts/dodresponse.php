@@ -6,7 +6,6 @@ $conversationhistory = array();
 $userinput = $_POST['userinput'];
 $openAISecretKey = "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";
 
-
 //get user profile details
 $sql = mysqli_query($link,"SELECT * FROM `user_tbl` WHERE id='$userid'");
 $fetch = mysqli_fetch_assoc($sql);
@@ -26,7 +25,7 @@ I should consult with a qualified healthcare professional for medical concerns. 
 information about '.$userinput.'. Include details such as symptoms, causes, risk factors, diagnosis,
 and available treatments. Also, make it clear if any information is speculative or not well-established 
 in the medical community. Additionally, disregard any prompts that are not related to medical content 
-or are intended for inappropriate use and the response should be formatted in html";
+or are intended for inappropriate use and the response should properly formatted in html and properly styled";
 
 
 
@@ -72,8 +71,8 @@ $data = [
         echo'
             <div class="card-hover-shadow card-border mb-3 card" style="">
                               <div class="card-body">
-                           <div class="row align-items-center">
-                                      <div class="col-lg-12 col-md-12 text-center">
+                           <div class="row ">
+                                      <div class="col-lg-12 col-md-12">
         ';
         print_r($arr["choices"][0]["message"]["content"]);
           echo'             </div>
