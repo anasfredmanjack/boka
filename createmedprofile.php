@@ -142,11 +142,10 @@ include('scripts/config/config.php');
                 </div>
                <div class="col-12">
                 <center>
-                <button type="button" class="button mt-2 mb-2 w-90" id="submitbtn">
-                    Create Profile
-                  </button>
+                    <button type="button" class="button mt-2 mb-2 w-90" id="submitbtn"> Update Profile</button>
                   <center>
-</div>
+                </div>
+                </div>
 </div>
                
          </div>
