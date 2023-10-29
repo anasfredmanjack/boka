@@ -4,7 +4,7 @@ $userid = $_POST['userrid'];
 
 $conversationhistory = array();
 $userinput = $_POST['userinput'];
-$openAISecretKey = "";
+$openAISecretKey = "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";
 
 
 //get user profile details

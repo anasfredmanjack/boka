@@ -8,7 +8,7 @@ require 'PHPMailer-master/Exception.php';
 require 'PHPMailer-master/PHPMailer.php';
 require 'PHPMailer-master/SMTP.php';
 $conversationhistory = array();
-$openAISecretKey = "";
+$openAISecretKey = "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";
 //== ===    user prescription plan======= ======//
 $prescriptiontitle = $_POST['prescriptiontitle'];
 $drugnamearray = $_POST['drugnamearray'];
